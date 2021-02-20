@@ -1,10 +1,15 @@
+body{
+    font-family: 'poppins', sans-serif;
+    margin: 5px 200px 0;
+    padding: 20px;
+}
 #countries{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
 }
 .country{
-    border: 1px solid red;
+    box-shadow: 10px 10px 10px grey;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -17,4 +22,15 @@
 #countryDetail img{
     border:1px solid blue;
     width: 200px;
+}
+.button{
+    background-color: royalblue;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: large;  
+}
+.banner{
+    text-align: center;
+    font-size: 30px;
+    color:orange;
 }

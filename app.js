@@ -12,7 +12,7 @@ const displayCountries = countries => {
         const countryInfo = `
             <h3 class = "country-name">${country.name}</h3>
             <p>${country.capital}</p>
-            <button onclick="displayCountryDetail('${country.name}')">Details</button>
+            <button class="button" onclick="displayCountryDetail('${country.name}')">Details</button>
         `;
         countryDiv.innerHTML = countryInfo;
         countriesDiv.appendChild(countryDiv);
@@ -34,8 +34,9 @@ const renderCountryInfo = country => {
     const countryDiv = document.getElementById('countryDetail');
     countryDiv.innerHTML = `
         <h1>Name: ${country.name}</h1>
-        <p>Population${country.population}</p>
-        <p>Area${country.area}</p>
+        <h5>Population: ${country.population}</h5>
+        <h5>Area: ${country.area}</h5>
+        <h5>Native Name: ${country.nativeName}</h5>
         <img src= "${country.flag}">
 
     `
